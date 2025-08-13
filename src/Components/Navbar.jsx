@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const Links = (
@@ -7,27 +8,34 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? " text-[#257DC8]" : "border-gray-300"
+            isActive ? " text-[#00ffff]" : "border-gray-300"
           }
           to="/"
         >
           Home
         </NavLink>
       </li>
+
+    <li>
+  <Link
+    to="about-section" 
+    smooth={true}
+    duration={500}
+    spy={true}
+    offset={-50} 
+    className="cursor-pointer hover:text-[#00ffff]"
+    activeClass="text-[#00ffff]"
+  >
+    About
+  </Link>
+          </li>
+          
+
+
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? " text-[#257DC8]" : "border-gray-300"
-          }
-          to="/about"
-        >
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? " text-[#257DC8]" : "border-gray-300"
+            isActive ? " text-[#00ffff]" : "border-gray-300"
           }
           to="/project"
         >
@@ -37,7 +45,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? " text-[#257DC8]" : "border-gray-300"
+            isActive ? " text-[#00ffff]" : "border-gray-300"
           }
           to="/learn"
         >
@@ -47,7 +55,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? " text-[#257DC8]" : "border-gray-300"
+            isActive ? " text-[#00ffff]" : "border-gray-300"
           }
           to="/contact"
         >
@@ -58,7 +66,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="backdrop-blur-2xl sticky top-0 text-white  bg-white/5">
+    <div className="backdrop-blur-2xl sticky top-0 z-50 text-white  bg-white/5">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -92,11 +100,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{Links}</ul>
         </div>
         <div className="navbar-end">
-         <div className="avatar">
-  <div className="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
-    <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-  </div>
-</div>
+          <div className="avatar">
+            <div className="ring-[#217fd2] ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
+              <img src="https://i.ibb.co.com/Gfg1FZVD/IMG-20241211-111317-1.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

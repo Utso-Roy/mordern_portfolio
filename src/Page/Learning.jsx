@@ -2,7 +2,7 @@ import React from 'react';
 
 const Learning = () => {
     return (
-        <div>
+        <div className='text-white'>  
             this is learning page
         </div>
     );

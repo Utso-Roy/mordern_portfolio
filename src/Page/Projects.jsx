@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div>
+        <div className='text-white'>
             all projects
         </div>
     );

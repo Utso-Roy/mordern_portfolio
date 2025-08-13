@@ -1,12 +1,18 @@
-import React from 'react';
-
+import React from "react";
+import Section1 from "../Components/AllHomeSection/section1";
+import AboutMe from "../Components/AllHomeSection/AboutMe";
 const Home = () => {
-    return (
-        <div>
-            This is Home page 
-            
-        </div>
-    );
+  return (
+    <div className="text-white">
+          <section>
+              <Section1></Section1>
+          </section>
+          
+          <section>
+              <AboutMe></AboutMe>
+          </section>
+    </div>
+  );
 };
 
 export default Home;
