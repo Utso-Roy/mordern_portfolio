@@ -11,10 +11,9 @@ const Section1 = () => {
   }, []);
 
   return (
-    <div className=" text-white">
+    <div className=" text-white ">
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className=" w-full flex flex-col lg:flex-row-reverse items-center gap-10">
-          {/* Right Side: Image with Pixel Transition */}
           <div data-aos="fade-left" className="w-full  lg:w-1/3">
             <PixelTransition
               firstContent={
@@ -27,7 +26,7 @@ const Section1 = () => {
               secondContent={
                 <div className="w-full h-full grid place-items-center bg-gray-800 rounded-lg">
                   <p className="font-extrabold text-4xl lg:text-5xl text-white">
-                    Utso Roy!
+                    Utso Roy
                   </p>
                 </div>
               }

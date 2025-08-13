@@ -25,8 +25,8 @@ const skillsData = {
     },
     {
       name: "JavaScript",
-      icon: <FaJs className="inline mr-2 text-yellow-400" />,
-      color: "text-yellow-400",
+      icon: <FaJs className="inline mr-2 text-yellow-500" />,
+      color: "text-yellow-500",
     },
     {
       name: "React",
@@ -64,7 +64,7 @@ const skillsData = {
     },
     {
       name: "Postman",
-      icon: <SiPostman className="inline mr-2 text-orange-500" />,
+      icon: <SiPostman className="inline mr-2 text-orange-600" />,
       color: "text-orange-500",
     },
   ],
@@ -76,7 +76,7 @@ const Skill = () => {
   }, []);
 
   return (
-    <section className="py-8 text-white">
+    <section className="py-8  bg-white/5 backdrop-blur-2xl  text-white">
       <div className="w-full max-w-4xl mx-auto px-6">
         <h2
           className="text-4xl font-bold mb-10 text-center text-[#00ffff]"

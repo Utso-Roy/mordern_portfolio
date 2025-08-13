@@ -2,9 +2,10 @@ import React from "react";
 import Section1 from "../Components/AllHomeSection/section1";
 import AboutMe from "../Components/AllHomeSection/AboutMe";
 import Skill from "../Components/AllHomeSection/Skill";
+import Projects from "./Projects";
 const Home = () => {
   return (
-    <div className="text-white">
+    <div className="text-white space-y-4">
           <section>
               <Section1></Section1>
           </section>
@@ -14,6 +15,9 @@ const Home = () => {
           </section>
           <section>
               <Skill></Skill>
+          </section>
+          <section>
+              <Projects></Projects>
           </section>
     </div>
   );
