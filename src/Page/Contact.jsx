@@ -28,14 +28,14 @@ const Contact = () => {
         </div>
 
         {/* Right Section - Form */}
-        <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <div className="p-6 border backdrop-blur-2xl  bg-white/5 rounded-xl shadow-lg">
           <form className="space-y-4">
             <div>
               <label className="block text-sm font-medium mb-1">Name</label>
               <input
                 type="text"
                 placeholder="Your name"
-                className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 rounded-lg  border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 rounded-lg  border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
@@ -51,12 +51,12 @@ const Contact = () => {
               <textarea
                 rows="4"
                 placeholder="Your message"
-                className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 transition-colors p-3 rounded-lg font-semibold"
+              className="w-full border cursor-pointer hover:text-gray-700  hover:bg-[#00ffff] transition-colors p-3 rounded-lg font-semibold"
             >
               Send Message
             </button>

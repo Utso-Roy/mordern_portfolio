@@ -71,61 +71,67 @@ const Projects = () => {
         My Projects
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-col divide-y divide-cyan-500/30">
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="relative group"
+            className="py-8"
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            {/* Gradient Border */}
-            <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-border pointer-events-none"></div>
-
-            {/* Card */}
-            <div className="relative bg-gray-800 rounded-xl p-5 flex flex-col gap-3 border-4 border-gray-700 transition-all duration-300">
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-40 object-cover rounded-md"
+                className="w-full md:w-1/3 h-48 object-cover rounded-lg border border-cyan-400"
               />
-              <h3 className="text-xl font-semibold text-white">
-                {project.title}
-              </h3>
-              <p className="text-gray-300">{project.description}</p>
 
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mt-2">
-                {project.tech.map((t, i) => (
-                  <span
-                    key={i}
-                    className="px-2 py-1 text-xs bg-white/10 text-cyan-400 border border-cyan-500 rounded-full"
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-semibold text-cyan-400 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300">{project.description}</p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {project.tech.map((t, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 text-xs bg-white/10 text-cyan-400 border border-cyan-500 rounded-full"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Buttons */}
+                <div className="mt-4 flex gap-3">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline btn hover:bg-[#00ffff] hover:text-gray-900 backdrop-blur-2xl shadow-2xl hover:shadow-[#00ffff] text-white bg-white/5"
                   >
-                    {t}
-                  </span>
-                ))}
-              </div>
-
-              {/* Buttons */}
-              <div className="mt-4 flex gap-3">
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline btn hover:bg-[#00ffff] hover:text-gray-900 backdrop-blur-2xl shadow-2xl hover:shadow-[#00ffff] text-white bg-white/5"
-                >
-                  Live Link
-                </a>
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline btn hover:bg-[#00ffff] hover:text-gray-900 backdrop-blur-2xl shadow-2xl hover:shadow-[#00ffff] bg-white/5 text-white"
-                >
-                  GitHub
-                </a>
+                    Live Link
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline btn hover:bg-[#00ffff] hover:text-gray-900 backdrop-blur-2xl shadow-2xl hover:shadow-[#00ffff] bg-white/5 text-white"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </div>
             </div>
+
+            {/* Horizontal Gradient Divider */}
+            {index < projectsData.length - 1 && (
+              <div className="h-1 mt-8 bg-gradient-to-r from-transparent via-cyan-400 to-transparent rounded-full"></div>
+            )}
           </div>
         ))}
       </div>
