@@ -7,7 +7,7 @@ import LightRays from '../LightRays/LightRays';
 const MainLayout = () => {
 
     return (
-       <div className="relative lg:py-5 sm:py-3  lg:p-5 sm:p-3   min-h-screen">
+       <div className="relative lg:py-5 sm:py-3 max-w-6xl mx-auto  lg:p-5 sm:p-3   min-h-screen">
   {/* Background component */}
   <div className="absolute bg-gray-800  inset-0 z-0">
                 <LightRays
