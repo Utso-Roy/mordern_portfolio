@@ -11,18 +11,18 @@ const AboutMe = () => {
 
 
   return (
-    <section  className="text-white ">
+    <section  className="text-white  ">
       <div className="mx-auto  space-y-6">
         {/* Heading */}
               <h3
                    data-aos="fade-right"
-                  className="text-5xl text-center font-semibold text-[#00ffff]">
+                  className="text-4xl text-center font-bold  text-base-300">
           About Me
         </h3>
               <h2
                     data-aos="fade-left"
                   
-                  className="text-4xl text-center font-bold leading-tight">
+                  className="text-3xl text-center font-semibold leading-tight">
           I'm <span className="text-[#00ffff]">Utso Chandro Roy</span>, a
           Passionate Web Developer
         </h2>

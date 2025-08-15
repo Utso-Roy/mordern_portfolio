@@ -12,7 +12,7 @@ const Section1 = () => {
 
   return (
     <div className=" text-white ">
-      <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="min-h-screen flex items-center justify-center ">
         <div className=" w-full flex flex-col lg:flex-row-reverse items-center gap-10">
           <div data-aos="fade-left" className="w-full  lg:w-1/3">
             <PixelTransition

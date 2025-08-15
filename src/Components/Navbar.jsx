@@ -63,7 +63,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="backdrop-blur-2xl sticky top-0 z-50 text-white  bg-white/5">
+    <div className="backdrop-blur-2xl sticky rounded-lg top-0 z-50 text-white  bg-white/5">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -91,7 +91,7 @@ const Navbar = () => {
               {Links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="px-3 text-2xl sacramento-regular ">Utso Roy</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{Links}</ul>

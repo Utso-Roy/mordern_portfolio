@@ -6,8 +6,8 @@ import Projects from "./Projects";
 import Learning from "./Learning";
 const Home = () => {
   return (
-    <div className="text-white space-y-4">
-          <section>
+    <div className="text-white px-6 space-y-4">
+          <section >
               <Section1></Section1>
           </section>
           
