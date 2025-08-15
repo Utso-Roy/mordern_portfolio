@@ -4,9 +4,10 @@ import AboutMe from "../Components/AllHomeSection/AboutMe";
 import Skill from "../Components/AllHomeSection/Skill";
 import Projects from "./Projects";
 import Learning from "./Learning";
+import Contact from "./Contact";
 const Home = () => {
   return (
-    <div className="text-white px-6 space-y-4">
+    <div className="text-white  space-y-4">
           <section >
               <Section1></Section1>
           </section>
@@ -22,6 +23,9 @@ const Home = () => {
           </section>
           <section>
               <Learning></Learning>
+          </section>
+          <section>
+              <Contact></Contact>
           </section>
     </div>
   );

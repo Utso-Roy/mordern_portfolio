@@ -66,7 +66,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="my-10  max-w-screen-xl mx-auto">
+    <section className="my-10 px-6 max-w-screen-xl mx-auto">
       <h2 className="text-center text-base-300 text-4xl font-bold mb-10">
         My Projects
       </h2>
@@ -84,7 +84,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full md:w-1/3 h-48 object-cover rounded-lg border-1 border-[#00ffff]"
+                className="w-full md:w-1/3 h-48 object-cover rounded-lg border-2 border-white "
               />
 
               {/* Content */}

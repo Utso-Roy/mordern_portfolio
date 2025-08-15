@@ -30,7 +30,7 @@ const Learning = () => {
   }, []);
 
   return (
-    <div className="min-h-screen  py-16 px-6">
+    <div className="min-h-screen  py-10 px-6">
       <h1
         data-aos="fade-down"
         className="text-3xl font-bold flex gap-2 justify-center items-center text-white mb-12"
@@ -44,7 +44,7 @@ const Learning = () => {
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 200}
-            className=" backdrop-blur-2xl bg-white/5 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer"
+            className=" backdrop-blur-2xl bg-white/5 rounded-2xl p-6  shadow-lg hover:shadow-[#00ffff] transition cursor-pointer"
           >
             <div className="flex justify-center mb-4">{topic.icon}</div>
             <h2 className="text-xl font-semibold text-white text-center mb-2">

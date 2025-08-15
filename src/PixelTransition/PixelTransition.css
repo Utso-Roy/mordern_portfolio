@@ -6,11 +6,16 @@
   background-color: #222;
   color: var(--color-primary, #fff);
   border-radius: 15px;
-  border: 2px solid #fff;
+  border: 2px solid #00ffff;
   width: 300px;
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.pixelated-image-card:hover {
+  box-shadow: 0 0 20px #00ffff;
 }
 
 .pixelated-image-card__default,

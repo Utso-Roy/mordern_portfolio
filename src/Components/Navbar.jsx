@@ -91,7 +91,7 @@ const Navbar = () => {
               {Links}
             </ul>
           </div>
-          <a className="px-3 text-2xl sacramento-regular ">Utso Roy</a>
+          <a className="px-3 text-2xl sacramento-regular text-[#00ffff] ">Utso Roy</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{Links}</ul>

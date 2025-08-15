@@ -36,7 +36,7 @@ const Skill = () => {
   }, []);
 
   return (
-    <section className="py-12 text-white">
+    <section className="py-12  text-white">
       <div className="max-w-6xl mx-auto px-6">
         <h2
           className="text-4xl font-bold mb-12 text-center text-base-300"
@@ -53,7 +53,7 @@ const Skill = () => {
               data-aos="fade-up"
             >
               {/* Category Header with icon */}
-              <div className="flex items-center gap-2 bg-gray-800/40 backdrop-blur-md px-4 py-2 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+              <div className="flex items-center gap-2 bg-gray-800/40 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg hover:shadow-[#00ffff] hover:scale-105 transform transition duration-300">
                 <MdOutlineCategory className="text-[#00ffff] text-xl" />
                 <span className="text-lg font-semibold text-[#00ffff]">
                   {category.toUpperCase()}
@@ -64,7 +64,7 @@ const Skill = () => {
               {skillsData[category].map((skill) => (
                 <div
                   key={skill.name}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl shadow-md hover:scale-105 transform transition duration-300 ${skill.color} bg-gray-800/40 backdrop-blur-md`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl shadow-md hover:shadow-[#00ffff] hover:scale-105 transform transition duration-300 ${skill.color} bg-gray-800/40 backdrop-blur-md`}
                 >
                   {skill.icon} <span className="font-medium text-white">{skill.name}</span>
                 </div>

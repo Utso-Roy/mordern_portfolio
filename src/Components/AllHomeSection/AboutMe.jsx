@@ -11,7 +11,7 @@ const AboutMe = () => {
 
 
   return (
-    <section  className="text-white  ">
+    <section  className="text-white px-6  ">
       <div className="mx-auto  space-y-6">
         {/* Heading */}
               <h3
