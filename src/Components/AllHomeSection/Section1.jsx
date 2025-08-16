@@ -11,6 +11,13 @@ const Section1 = () => {
     });
   }, []);
 
+  const resumeBtn = () => {
+    const link = document.createElement("a");
+    link.href = "/Resume.pdf";  
+    link.download = "Utso_Roy_Resume.pdf";
+    link.click();
+  }
+
   return (
     <div className=" text-white  px-6">
       <div className="min-h-screen flex items-center justify-center ">
@@ -88,8 +95,8 @@ const Section1 = () => {
                       </div>
             </div>
 
-            <button className="btn btn-outline border-[#00ffff] text-white hover:bg-[#00ffff] backdrop-blur-2xl   bg-white/5 hover:text-gray-900">
-              Resume Download
+            <button onClick={resumeBtn} className="btn btn-outline border-[#00ffff] text-white hover:bg-[#00ffff] backdrop-blur-2xl   bg-white/5 hover:text-gray-900">
+            View Resume
             </button>
           </div>
         </div>

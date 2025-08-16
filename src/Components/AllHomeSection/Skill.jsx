@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiPostman, SiMongodb } from "react-icons/si";
 import { MdOutlineCategory } from "react-icons/md";
+import { RiNextjsFill } from "react-icons/ri";
+import { AiFillThunderbolt } from "react-icons/ai";
 
 const skillsData = {
   frontend: [
@@ -17,16 +19,19 @@ const skillsData = {
     { name: "CSS", icon: <FaCss3Alt />, color: "text-blue-500" },
     { name: "JavaScript", icon: <FaJs />, color: "text-yellow-500" },
     { name: "React", icon: <FaReact />, color: "text-blue-400" },
+    { name: "Next.Js", icon: <RiNextjsFill />, color: "text-blue-400" },
     { name: "TailwindCSS", icon: <SiTailwindcss />, color: "text-cyan-400" },
   ],
   backend: [
     { name: "Node.js", icon: <FaNodeJs />, color: "text-green-400" },
     { name: "Express.js", icon: <SiExpress />, color: "text-gray-300" },
+    { name: "Next.js API Routes", icon: <RiNextjsFill />, color: "text-gray-300" },
     { name: "MongoDB", icon: <SiMongodb />, color: "text-green-500" },
   ],
   tools: [
     { name: "Git", icon: <FaGit />, color: "text-red-500" },
     { name: "Postman", icon: <SiPostman />, color: "text-orange-600" },
+    { name: "Thunder Client", icon: <AiFillThunderbolt />, color: "text-orange-600" },
   ],
 };
 
