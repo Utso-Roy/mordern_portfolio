@@ -10,7 +10,7 @@ const projectsData = [
       "A responsive volunteer management platform where users can create, update, delete, and request volunteer need posts, join others' posts, and manage their own posts with secure authentication, JWT protection, and a user-friendly UI.",
     image: "https://i.ibb.co.com/0yWxygtf/launcly.jpg",
     liveLink: "https://example.com/project-one",
-    githubLink: "https://github.com/username/project-one",
+    githubLink: "https://github.com/Utso-Roy/Launchly_Ai",
     tech: [
       "MongoDB",
       "Express",
