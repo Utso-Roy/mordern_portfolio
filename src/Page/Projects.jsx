@@ -7,9 +7,9 @@ const projectsData = [
   {
     title: "Launchly",
     description:
-      "A responsive volunteer management platform where users can create, update, delete, and request volunteer need posts, join others' posts, and manage their own posts with secure authentication, JWT protection, and a user-friendly UI.",
+      "A modern platform for discovering and sharing tech products like web apps, AI tools, software, games, and mobile apps — inspired by Product Hunt. Users can submit products, upvote/downvote, and post reviews. The platform features user authentication, role-based access (user, moderator, admin), product moderation, and a payment system for unlocking premium features.",
     image: "https://i.ibb.co.com/0yWxygtf/launcly.jpg",
-    liveLink: "https://example.com/project-one",
+    liveLink: "https://launchly-ai.netlify.app/",
     githubLink: "https://github.com/Utso-Roy/Launchly_Ai",
     tech: [
       "MongoDB",
@@ -24,19 +24,20 @@ const projectsData = [
   },
   {
     title: "Project Two",
-    description:
-      "A responsive volunteer management platform where users can create, update, delete, and request volunteer need posts, join others' posts, and manage their own posts with secure authentication, JWT protection, and a user-friendly UI.",
-    image: "https://i.ibb.co.com/0yWxygtf/launcly.jpg",
-    liveLink: "https://example.com/project-two",
-    githubLink: "https://github.com/username/project-two",
+    description: "Indoor Plants Website A modern platform for plant lovers, designed with user experience, interactivity, and scalability in mind.",
+    image: "https://i.ibb.co.com/ccnz20xK/indoor-Plants.jpg",
+    liveLink: "https://green-ghor.netlify.app/",
+    githubLink: "https://github.com/Utso-Roy/Indor_Planets/tree/main/indor_planets_Clients_side",
     tech: [
       "MongoDB",
-      "Express",
+      "Express.js",
       "Axios",
       "Firebase Authentication",
       "React",
       "JWT",
-      "Stripe",
+      "Tanstack Query",
+      "Aos",
+      "SSLCOMMERZ",
       "Node.js",
     ],
   },
@@ -44,9 +45,9 @@ const projectsData = [
     title: "Project Three",
     description:
       "A responsive volunteer management platform where users can create, update, delete, and request volunteer need posts, join others' posts, and manage their own posts with secure authentication, JWT protection, and a user-friendly UI.",
-    image: "https://i.ibb.co.com/0yWxygtf/launcly.jpg",
-    liveLink: "https://example.com/project-three",
-    githubLink: "https://github.com/username/project-three",
+    image: "https://i.ibb.co.com/938cbSbS/volunteer-Hub.jpg",
+    liveLink: "https://volunteers-management-hub.netlify.app/",
+    githubLink: "https://github.com/Utso-Roy/Volunteer_Managments",
     tech: [
       "MongoDB",
       "Express",
@@ -54,7 +55,6 @@ const projectsData = [
       "Firebase Authentication",
       "React",
       "JWT",
-      "Stripe",
       "Node.js",
     ],
   },
@@ -67,7 +67,7 @@ const Projects = () => {
 
   return (
     <section className="my-10 px-6 max-w-screen-xl mx-auto">
-      <h2 className="text-center text-base-300 text-4xl font-bold mb-10">
+      <h2 className="text-center text-base-300 text-3xl font-bold mb-10">
         My Projects
       </h2>
 

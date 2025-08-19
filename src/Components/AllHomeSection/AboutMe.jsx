@@ -16,7 +16,7 @@ const AboutMe = () => {
         {/* Heading */}
               <h3
                    data-aos="fade-right"
-                  className="text-4xl text-center font-bold  text-base-300">
+                  className="text-3xl text-center font-bold  text-base-300">
           About Me
         </h3>
               <h2

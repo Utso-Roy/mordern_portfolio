@@ -3,6 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { SiJavascript, SiRedux } from "react-icons/si";
 import { FaBookOpen, FaProjectDiagram } from "react-icons/fa";
+import Roket from '../../src/assets/Roket.json'
+import Lottie from "lottie-react";
 
 const Learning = () => {
   const topics = [
@@ -33,9 +35,9 @@ const Learning = () => {
     <div className="min-h-screen  py-10 px-6">
       <h1
         data-aos="fade-down"
-        className="text-3xl font-bold flex gap-2 justify-center items-center text-white mb-12"
+        className="text-3xl font-bold flex gap-1 justify-center items-center text-white mb-12"
       >
-        <FaBookOpen /> Learning Dashboard
+       <Lottie className="w-10 h-12"  animationData={Roket} loop={true} />Learning Dashboard
       </h1>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

@@ -44,7 +44,7 @@ const Skill = () => {
     <section className="py-12  text-white">
       <div className="max-w-6xl mx-auto px-6">
         <h2
-          className="text-4xl font-bold mb-12 text-center text-base-300"
+          className="text-3xl font-bold mb-12 text-center text-base-300"
           data-aos="fade-down"
         >
           My Skills
