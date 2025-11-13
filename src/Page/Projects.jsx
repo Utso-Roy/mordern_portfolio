@@ -1,6 +1,26 @@
 import React, { useEffect, useState } from "react";
 
 const projectsData = [
+
+
+  {
+  title: "MonoLense",
+  description:
+    "A visually stunning photography portfolio website built with Next.js and Tailwind CSS. It showcases the photographer’s event, travel, and portrait photography works with a clean, responsive design. Features include a categorized gallery, lightbox image viewer, smooth animations using Framer Motion, and a contact form for booking inquiries.",
+  image: "https://i.ibb.co.com/JLzs1LK/monoLens.jpg",
+  liveLink: "https://mnonolens-website.vercel.app/",
+  githubLink: "https://github.com/Utso-Roy/Photographar_website",
+  tech: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Next/Image",
+    "Vercel"
+    ],
+   type: "Frontend Design Project"
+}
+,
   {
     title: "Launchly",
     description:
@@ -18,6 +38,7 @@ const projectsData = [
       "Stripe",
       "Node.js",
     ],
+    type: "Frontend and Backend Design Project"
   },
   {
     title: "Green Ghor",
@@ -39,9 +60,10 @@ const projectsData = [
       "SSLCOMMERZ",
       "Node.js",
     ],
+    type: "Frontend and Backend Design Project"
   },
   {
-    title: "Cholo",
+    title: "Cholo (Team Project)",
     description:
 "Cholo is a modern ride-sharing platform connecting riders and drivers in real-time. It features secure payments, dynamic fare calculation, live trip tracking, ride history, and driver status updates. Built with scalability and responsiveness, Cholo ensures a smooth and safe experience across devices.",
     image: "https://i.ibb.co.com/cShpf0dr/cholo.jpg",
@@ -61,6 +83,7 @@ const projectsData = [
       "Swiper.js",
       "AOS",
     ],
+    type: "Frontend and Backend Design Project"
   },
 
   {
@@ -79,6 +102,7 @@ const projectsData = [
       "JWT",
       "Node.js",
     ],
+    type: "Frontend and Backend Design Project"
   },
 ];
 
@@ -174,6 +198,8 @@ const Projects = () => {
                       <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors duration-300">
                         {project.title}
                       </h3>
+
+                      <p className="font-semi-bold text-white mb-4 group-hover:text-cyan-400 transition-colors duration-300">{ project.type}</p>
                       <p className="text-gray-300 leading-relaxed mb-6">
                         {project.description}
                       </p>
