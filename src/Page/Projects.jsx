@@ -10,8 +10,8 @@ const projectsData = [
     githubLink: "https://github.com/Utso-Roy/Photographar_website",
     tech: [
       "Next.js",
-      "React",
       "Tailwind CSS",
+       "Swiper.js",
       "Framer Motion",
       "Next/Image",
       "Vercel",
