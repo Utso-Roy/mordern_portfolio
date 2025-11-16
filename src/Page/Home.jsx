@@ -7,7 +7,7 @@ import Learning from "./Learning";
 import Contact from "./Contact";
 const Home = () => {
   return (
-    <div className="text-white  space-y-4">
+    <div className="text-white  space-y-16">
           <section >
               <Section1></Section1>
           </section>

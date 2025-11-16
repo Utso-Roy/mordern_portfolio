@@ -32,7 +32,7 @@ const Learning = () => {
   }, []);
 
   return (
-    <div className="min-h-screen  py-10 px-6">
+    <div className="py-5 px-6">
       <h1
         data-aos="fade-down"
         className="text-3xl font-bold flex gap-1 justify-center items-center text-white mb-12"
@@ -40,7 +40,7 @@ const Learning = () => {
        <Lottie className="w-10 h-12"  animationData={Roket} loop={true} />Learning Dashboard
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {topics.map((topic, index) => (
           <div
             key={index}

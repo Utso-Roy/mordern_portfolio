@@ -45,10 +45,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen text-white flex items-center justify-center px-4 py-10 ">
+    <div className="py-10 text-white px-4  ">
       <div
         data-aos="fade-right"
-        className="max-w-6xl w-full grid md:grid-cols-2 gap-10"
+        className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mx-auto"
       >
         {/* Left Section - Info */}
         <div className="space-y-8">
@@ -79,7 +79,7 @@ const Contact = () => {
               <div>
                 <h2 className="font-semibold text-white text-lg mb-1">Response Time</h2>
                 <p className="text-gray-400">Usually within 24 hours</p>
-                <p className="text-gray-500 text-sm mt-1">Monday - Friday, 9AM - 6PM</p>
+                <p className="text-gray-500 text-sm mt-1">Saturday - Friday, 9AM - 6PM</p>
               </div>
             </div>
 

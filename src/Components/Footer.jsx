@@ -4,7 +4,7 @@ import { HiOutlineOfficeBuilding } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="bg-white/5 backdrop-blur-3xl text-gray-300 py-10 px-6">
+    <footer className="bg-white/5 backdrop-blur-3xl text-gray-300 py-10 max-w-7xl mx-auto ">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4">
         {/* Icon and Name */}
         <div className="flex items-center justify-center gap-2">
