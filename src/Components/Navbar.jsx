@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
 
@@ -91,7 +91,11 @@ const Navbar = () => {
               {Links}
             </ul>
           </div>
-          <a className="px-3 text-2xl sacramento-regular text-[#00ffff] ">Utso Roy</a>
+          <Link to='/'>
+          
+          
+                    <img className="w-18 h-16 cursor-pointer object-contain" src="https://i.ibb.co.com/7xbx33fv/ur-logo-removebg-preview.png" alt="" />
+</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{Links}</ul>
